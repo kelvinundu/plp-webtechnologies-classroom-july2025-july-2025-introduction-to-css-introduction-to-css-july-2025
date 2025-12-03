@@ -1,0 +1,214 @@
+/* -----------------------------------
+   1. GLOBAL RESET AND TYPOGRAPHY
+   ----------------------------------- */
+   
+/* Reset margin and padding for consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Crucial for Box Model control: padding/border don't increase element width/height */
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f4f7f9; /* Light, clean background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Central container for content width */
+.container {
+    max-width: 1100px;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Add internal padding on the sides for smaller screens */
+}
+
+/* Global Heading Styles */
+h1, h2, h3 {
+    margin-bottom: 10px; /* Margin below all headings */
+    color: #0056b3; /* UoN blue-inspired color */
+}
+
+h1 span {
+    color: #555;
+    font-weight: 300;
+}
+
+/* Section Spacing */
+.section-padding {
+    padding: 40px 0; /* Generous vertical padding for sections */
+}
+
+/* -----------------------------------
+   2. HEADER AND NAVIGATION STYLING (Margin and Padding Demo)
+   ----------------------------------- */
+
+.main-header {
+    background-color: #ffffff;
+    border-bottom: 5px solid #0056b3; /* Strong bottom border for separation */
+    padding: 20px 0; /* Padding inside the header container */
+    margin-bottom: 30px; /* Margin below the header to push content down */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between list items */
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px; /* Padding inside the links to make them easier to click */
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #007bff;
+}
+
+/* Button Styling (Applying Box Model principles) */
+.button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 5px;
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid transparent; /* Ensure consistent border space */
+    transition: background-color 0.3s;
+}
+
+.primary-button {
+    background-color: #0056b3;
+    color: #ffffff;
+    border-color: #0056b3;
+}
+
+.primary-button:hover {
+    background-color: #004494;
+}
+
+.secondary-button {
+    background-color: #fff;
+    color: #0056b3;
+    border: 1px solid #0056b3;
+    padding: 8px 16px;
+    margin-top: 10px; /* Margin to separate button from text above */
+}
+
+.secondary-button:hover {
+    background-color: #e6f0ff;
+}
+
+/* -----------------------------------
+   3. ABOUT SECTION (Background Visualization)
+   ----------------------------------- */
+
+.profile-card {
+    background-color: #ffffff;
+    padding: 30px; /* Internal space */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px;
+    margin-bottom: 40px; /* External space separating it from the projects section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.intro-text {
+    font-size: 1.1em;
+    margin-bottom: 25px; /* Margin below the paragraph */
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 15px; /* Internal spacing within the stat box */
+    background-color: #e6f7ff; /* Different color to visualize padding */
+    border: 1px dashed #007bff; /* Dashed border to clearly show the box boundary */
+    flex-grow: 1;
+}
+
+/* -----------------------------------
+   4. PROJECTS SECTION (Card Layout)
+   ----------------------------------- */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* External spacing between project cards */
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ccc; /* Border around the card */
+    border-radius: 8px;
+    padding: 20px; /* Internal spacing inside the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card p {
+    margin-bottom: 15px; /* Margin below the paragraph text */
+}
+
+/* -----------------------------------
+   5. SKILLS SECTION (Tags)
+   ----------------------------------- */
+
+.skills-list {
+    margin-top: 20px;
+}
+
+.skill-tag {
+    display: inline-block;
+    background-color: #ddd;
+    color: #444;
+    font-size: 0.9em;
+    font-weight: 500;
+    padding: 8px 15px; /* Padding inside the tag bubble */
+    border-radius: 20px;
+    margin: 5px; /* External margin around the tag to separate it from others */
+    border: 1px solid #ccc;
+}
+
+/* -----------------------------------
+   6. FOOTER STYLING
+   ----------------------------------- */
+
+.main-footer {
+    background-color: #333;
+    color: #f4f7f9;
+    padding: 20px 0; /* Internal padding */
+    margin-top: 50px; /* Large margin to separate content from footer */
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+.main-footer a:hover {
+    color: #007bff;
+}
