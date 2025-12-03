@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UoN CS Portfolio - Jane Wanjiru</title>
+    <!-- Link the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Using a professional-looking font via Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 1. Header and Navigation -->
+    <header class="main-header">
+        <div class="container header-content">
+            <h1>Jane Wanjiru <span>| UoN Computer Science</span></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact" class="button primary-button">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- 2. Hero/About Section -->
+        <section id="about" class="section-padding profile-card">
+            <h2>Welcome to my Portfolio</h2>
+            <p class="intro-text">
+                I am an enthusiastic undergraduate Computer Science student at the University of Nairobi, specializing in backend systems and data analysis. I'm passionate about solving complex problems and contributing to innovative solutions that impact our community.
+            </p>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h3>3.8/5.0</h3>
+                    <p>Current GPA</p>
+                </div>
+                <div class="stat-box">
+                    <h3>2024</h3>
+                    <p>Expected Graduation</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Python, SQL</h3>
+                    <p>Primary Stack</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Projects Section -->
+        <section id="projects" class="section-padding">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                
+                <!-- Project Card 1 -->
+                <article class="project-card">
+                    <h3>Campus Meal Planner (Python/Django)</h3>
+                    <p>Developed a full-stack web application to help students track cafeteria menus and manage dietary needs. Featured Django REST framework for the API.</p>
+                    <a href="#" class="button secondary-button">View Code</a>
+                </article>
+
+                <!-- Project Card 2 -->
+                <article class="project-card">
+                    <h3>Kenyan Road Safety Analysis (Pandas/Matplotlib)</h3>
+                    <p>Utilized Pandas to clean and analyze public road accident data, generating key visualizations on accident hotspots and temporal trends. Final report submitted as coursework.</p>
+                    <a href="#" class="button secondary-button">View Report</a>
+                </article>
+
+                <!-- Project Card 3 -->
+                <article class="project-card">
+                    <h3>Simple Shell Interpreter (C)</h3>
+                    <p>Implemented a basic command-line interpreter in C as a core systems programming project, focusing on memory management and process creation using `fork()` and `execve()`.</p>
+                    <a href="#" class="button secondary-button">View Details</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 4. Skills Section -->
+        <section id="skills" class="section-padding">
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">C/C++</span>
+                <span class="skill-tag">SQL (PostgreSQL)</span>
+                <span class="skill-tag">Django</span>
+                <span class="skill-tag">Pandas / NumPy</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">Linux / Ubuntu</span>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 5. Footer -->
+    <footer id="contact" class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Jane Wanjiru. All rights reserved.</p>
+            <p>Connect: <a href="mailto:jane.w@uon.ac.ke">Email</a> | <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
